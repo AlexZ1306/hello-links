@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Links",
+  "version": "0.1.0",
+  "description": "Показывает URL текущей вкладки и позволяет скопировать его",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hello Links"
+  },
+  "permissions": ["tabs", "clipboardWrite"],
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  }
+}
+
